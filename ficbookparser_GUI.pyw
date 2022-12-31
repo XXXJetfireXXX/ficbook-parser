@@ -8,7 +8,7 @@ def update(x, key):
 sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
 layout = [  [sg.Text('Fanfiction URL:'), sg.InputText()],
-            [sg.Button('[Parse]'), sg.Button('[Download]'), sg.InputText(size=(8,1)), sg.Text("Chapter selection (leave empty to download all chapters)")],
+            [sg.Button('[Parse]'), sg.Button('[Download]'), sg.InputText(size=(8,1)), sg.Text("Chapter number (leave empty to download all chapters)")],
             [sg.Text("Название: []", key='-title-')],
             [sg.Output(size=(80, 20))] ]
 
@@ -28,6 +28,7 @@ while True:
         else:
             update('Title: ['+fbp.get_title(fic)+']','-title-')
             fbp.get_chapters(fic, True)
+            print(('{:=<50}').format(''))
 
     if event == '[Download]':
         num = -1
