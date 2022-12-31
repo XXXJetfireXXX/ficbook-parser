@@ -1,6 +1,8 @@
 ## Ficbook Parser
 A simple, primitive solution for parsing and downloading fanfictions from ficbook.net with GUI.
+
 Unlike ficbook itself, it saves all chapters of a fanfiction as separate txt files instead of a single large file.
+
 Made just for educational purposes, not meant to be taken as a serious software.
 
 ### Usage
