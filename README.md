@@ -2,7 +2,7 @@
 A simple, primitive solution for parsing and downloading fanfictions from ficbook.net with GUI.
 Made just for educational purposes, not meant to be taken as a serious software.
 
-##Usage
+### Usage
 
 ```
 pip install -r requirements.txt
